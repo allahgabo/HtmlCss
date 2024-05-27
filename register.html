@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="MyScript.js"></script>
+  <link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body>
+  <style>
+    .body h1 {
+      color: red;
+      text-align: center;
+      font-family: tahoma;
+
+    }
+
+    .body h2 {
+      color: blue;
+      text-align: right;
+      font-family: tahoma;
+
+    }
+
+    p {
+      font-family: 'andalus';
+    }
+
+
+    .regform {
+      margin: 0 auto;
+      width: 700px;
+
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #4CAF50;
+
+
+    }
+  </style>
+
+
+
+  <div class='head'>
+
+    <img src='img.jpg' />
+  </div>
+
+  <div class="vertical-menu row" style="direction: rtl;">
+    <a href="Home.html" class="col-md-3 lnk">الرئيسية</a>
+    <div class="dropdown col-md-3 lnk plnk ">
+      <button class="dropbtn active">المتجر ⬇️</button>
+      <div class="dropdown-content">
+        <a href="Products.html" class="active"> كافة المنتجات</a>
+      </div>
+    </div>
+    <a href="about.html" class=" col-md-2 lnk">من نحن</a>
+    <a href="FeedBack.Html" class=" col-md-2 lnk">تواصل معنا</a>
+    <a href="register.Html" class=" col-md-2 lnk" style="color:red;">مستخدم جديد</a>
+  </div>
+  <div class="body" style="direction: rtl;">
+    <div class="container regform" style="direction: rtl;">
+
+<h1>مستخدم جديد</h1>
+      <div class="row" style="color: red;min-height: 50px;">
+        <span id="err" style="display: none;"></span>
+      </div>
+      <form  method="post" onsubmit=" return CheckRegister(event) ">
+
+
+        <div class="form-group">
+  
+            <label for="uname">اسم المستخدم</label>
+            <input type="text" id="u_name" name="u_name" placeholder="3-7 احرف" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="uname">الاسم الاول</label>
+            <input type="text" id="uname" name="uname" placeholder="3-7 احرف" class="form-control" />
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="lname">العائلة</label>
+            <input type="text" id="lname" name="lname" placeholder="3-7 احرف" class="form-control" />
+
+        </div>
+
+        <div class="form-group">
+  
+            <label for="email">البريد الالكتروني</label>
+            <input type="email" id="email" name="email" placeholder="dates@gmail.example" class="form-control"/>
+
+        </div>
+
+        <div class="form-group">
+ 
+            <label for="tel">الجوال</label>
+            <input type="tel" id="tel" name="tel" placeholder="عشرة ارقام فقط" class="form-control"/>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="sex" >الجنس</label>
+            <select id="sex" class="form-control">
+              <option>ذكر</option>
+              <option>انثى</option>
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="pwd">كلمة المرور</label>
+
+            <input type="password" id="pwd" name="pwd" class="form-control"/>
+
+        </div>
+
+        <div class="form-group">
+
+
+            <label for="pw">تأكيد كلمة المرور</label>
+            <input type="password" id="pw" name="pw" class="form-control"/>
+
+        </div>
+
+        <div class="form-group" style="width:100%;text-align:center">
+
+            <input type="submit" value="تسجيل" class="btn btn-success" />
+
+            <input type="reset" value="اعادة" class="btn btn-danger" />
+
+
+        </div>
+
+
+
+
+      </form>
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

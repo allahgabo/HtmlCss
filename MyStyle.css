@@ -1,0 +1,110 @@
+.body{
+    max-width: 1000px;
+        margin: 20 auto;
+        text-align: right;
+}
+.vertical-menu {
+    width: 100%;
+    margin: 0  auto;
+    max-width: 900px;
+}
+
+    .vertical-menu .lnk ,.butn{
+        background-color: #eee;
+        color: black;
+        display: inline-block;
+        padding: 12px;
+        text-decoration: none;
+        width: 18%;
+    }
+
+        .vertical-menu .lnk:hover,.butn:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu .lnk.active  {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+        .plnk{
+
+            padding: 0 !important;
+
+        }
+
+.head {
+    width: 100%;
+    height: 250px;
+}
+
+    .head img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
+    
+.pleft {
+    width: 44%;
+    display: inline-block;
+}
+
+.pright {
+    display: inline-block;
+    width: 44%;
+}
+
+.about {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
